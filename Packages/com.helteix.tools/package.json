@@ -1,0 +1,35 @@
+{
+  "name": "com.helteix.tools",
+  "version": "1.3.5",
+  "displayName": "Helteix-Tools",
+  "description": "Common tools used across Helteix's packages that can help your productivity when developing your game.",
+  "documentationUrl" : "https://helteix.github.io/Docs/category/tools",
+  "unity": "6000.1",
+  "keywords": [
+    "Scripts",
+    "Tools",
+    "Advanced"
+  ],
+  "author": {
+    "name": "Helteix",
+    "email": "lupeni.tuikalepa@gmail.com",
+    "url": "https://www.unity3d.com"
+  },
+  "samples": [
+    {
+      "displayName": "Game Settings",
+      "description": "A scene that showcase how to setup a new GameSettings class and how to change the active one at runtime",
+      "path": "Samples~/GameSettings"
+    },
+    {
+      "displayName": "Serialized Components",
+      "description": "A scene that showcase how to setup a serialized components on GameObjects",
+      "path": "Samples~/SerializedComponents"
+    },
+    {
+      "displayName": "Type Mapping",
+      "description": "A scene that showcase how to setup how type mapping can be used inside a scene.",
+      "path": "Samples~/TypeMapping"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.helteix.tools/Editor/Common/LTX_USS.uss?fileID=7433441132597879392&amp;guid=eec5d1e447cce50429d105d07f226ca3&amp;type=3#LTX_USS" />
+    <ui:Label text="Singletons Viewer" name="MainTitle" class="main-title" style="padding-top: 25px;" />
+    <ui:VisualElement name="Containers" style="flex-grow: 1; padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px;">
+        <ui:TabView style="flex-grow: 1;">
+            <ui:Tab label="MonoSingletons" name="MonoSingletons" style="flex-grow: 1; padding-top: 5px; padding-bottom: 5px; padding-right: 5px; padding-left: 5px;">
+                <ui:ScrollView style="flex-grow: 1; flex-shrink: 1;" />
+            </ui:Tab>
+            <ui:Tab label="SceneServices" name="SceneServices" tabindex="1" style="flex-grow: 1; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;">
+                <ui:ScrollView style="flex-grow: 1; flex-shrink: 1;" />
+            </ui:Tab>
+        </ui:TabView>
+    </ui:VisualElement>
+</ui:UXML>

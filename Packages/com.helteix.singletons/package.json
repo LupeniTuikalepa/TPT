@@ -1,0 +1,32 @@
+{
+  "name": "com.helteix.singletons",
+  "version": "1.3.1",
+  "displayName": "Helteix-Singletons",
+  "description": "Advanced package granting access to full customizable Singletons.",
+  "unity": "6000.1",
+  "keywords": [
+    "Scripts",
+    "Tools",
+    "Advanced"
+  ],
+  "author": {
+    "name": "Helteix",
+    "email": "lupeni.tuikalepa@gmail.com",
+    "url": "https://www.unity3d.com"
+  },
+  "dependencies": {
+    "com.helteix.tools": "1.3.5"
+  },
+  "samples": [
+    {
+      "displayName": "Scene Services",
+      "description": "A collection of scenes showing use cases of Scene Services.",
+      "path": "Samples~/SceneServices"
+    },
+    {
+      "displayName": "Mono Singletons",
+      "description": "A simple showcase on how to setup and make a MonoSingleton appear",
+      "path": "Samples~/MonoSingletons"
+    }
+  ]
+}
