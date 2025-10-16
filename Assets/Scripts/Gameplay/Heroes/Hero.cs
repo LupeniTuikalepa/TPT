@@ -1,15 +1,20 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using DG.Tweening;
 using TPT.Data.Heroes;
+using TPT.Gameplay.UI.Heroes;
 using UnityEngine;
 
 namespace TPT.Gameplay.Heroes
 {
     public class Hero : MonoBehaviour
     {
+        public event Action OnTurnStarted;
+        public event Action OnTurnEnded;
+        public event Action<int, Hero> OnHealthChanged;
+        
         public int MaxHealth => HeroData.MaxHealth;
         public int MaxMana => HeroData.MaxMana;
-
         public HeroData HeroData { get; private set; }
         public int CurrentHealth { get; private set; }
         public int CurrentMana { get; private set; }
@@ -28,24 +33,32 @@ namespace TPT.Gameplay.Heroes
             CurrentSpeed = data.Speed;
         }
 
+        // ReSharper disable Unity.PerformanceAnalysis
         public void BeginTurn()
         {
             transform.DOPunchScale(Vector3.one * .15f, .3f);
-            transform.DOPunchPosition(Vector3.up * .2f, .5f);
+            transform.DOPunchPosition(Vector3.up * 2f, .5f);
+
+            OnTurnStarted?.Invoke();
         }
 
         public void EndTurn()
         {
-
+            OnTurnEnded?.Invoke();
         }
 
         public void AddOrRemoveHealth(int health)
         {
+            //La vie avant de prendre le coup
+            int lastHealth = CurrentHealth;
+            
             CurrentHealth += health;
             if (CurrentHealth > MaxHealth)
                 CurrentHealth = MaxHealth;
             if (CurrentHealth < 0)
                 CurrentHealth = 0;
+            
+            OnHealthChanged?.Invoke(lastHealth, this);
         }
 
         public void AddOrRemoveMana(int mana)

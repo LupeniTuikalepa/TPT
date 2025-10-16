@@ -4,7 +4,7 @@ using TPT.Gameplay.Heroes;
 using TPT.Gameplay.Player;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Pool;
+
 
 namespace TPT.Gameplay
 {
@@ -23,7 +23,6 @@ namespace TPT.Gameplay
 
         [SerializeField, Range(0, 3000)]
         private int turnCost = 1000;
-
 
         public Hero CurrentHero { get; private set; }
 
@@ -56,15 +55,29 @@ namespace TPT.Gameplay
 
             foreach (Hero hero in Player2.Heroes)
                 heroTurnPoints.Add(hero, turnCost);
+            
+            MoveToNextTurn();
         }
 
         private void Update()
         {
+            
             if (Keyboard.current[Key.Space].wasPressedThisFrame)
             {
                 MoveToNextTurn();
-                Debug.Log($"Current Hero: {CurrentHero}");
+                //Debug.Log($"Current Hero: {CurrentHero}");
             }
+            
+            if (Keyboard.current[Key.UpArrow].wasPressedThisFrame)
+            {
+                CurrentHero.AddOrRemoveHealth(10);
+            }
+            
+            if (Keyboard.current[Key.DownArrow].wasPressedThisFrame)
+            {
+                CurrentHero.AddOrRemoveHealth(-10);
+            }
+
         }
     }
 }
