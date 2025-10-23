@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using TPT.Core.Data.Heroes;
 using UnityEngine;
 
-namespace TPT.Gameplay
+namespace TPT.Gameplay.Level
 {
     public class LevelDebug : MonoBehaviour
     {

@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace TPT.Gameplay.UI.Heroes.Panels
+namespace TPT.Gameplay.UI.Heroes
 {
     [RequireComponent(typeof(CanvasGroup))]
     public abstract class HeroTurnPhaseUI<T> : MonoBehaviour where T : HeroTurnPhase

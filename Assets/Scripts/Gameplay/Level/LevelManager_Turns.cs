@@ -4,7 +4,7 @@ using TPT.Gameplay.Heroes;
 using UnityEngine;
 using UnityEngine.Pool;
 
-namespace TPT.Gameplay
+namespace TPT.Gameplay.Level
 {
     public partial class LevelManager
     {

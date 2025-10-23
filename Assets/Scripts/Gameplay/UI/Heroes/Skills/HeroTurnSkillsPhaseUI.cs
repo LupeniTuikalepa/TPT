@@ -2,8 +2,8 @@
 using Helteix.Tools;
 using TPT.Gameplay.Heroes;
 using TPT.Gameplay.Heroes.Skills;
+using TPT.Gameplay.Level;
 using TPT.Gameplay.Selection;
-using TPT.Gameplay.UI.Heroes.Panels;
 using UnityEngine;
 
 namespace TPT.Gameplay.UI.Heroes.Skills

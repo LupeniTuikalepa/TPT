@@ -1,8 +1,7 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace TPT.Gameplay.Heroes.Animations
+namespace TPT.Gameplay.Heroes.Animations.States
 {
     public class IdleState : StateMachineBehaviour
     {

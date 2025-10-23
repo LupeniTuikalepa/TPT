@@ -1,12 +1,9 @@
-using System;
 using System.Collections.Generic;
 using TPT.Gameplay.Heroes;
 using TPT.Gameplay.Player;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-
-namespace TPT.Gameplay
+namespace TPT.Gameplay.Level
 {
     public partial class LevelManager : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using TPT.Core.Data.Heroes;
 
-namespace TPT.Gameplay
+namespace TPT.Gameplay.Level
 {
     public struct LevelInfos
     {

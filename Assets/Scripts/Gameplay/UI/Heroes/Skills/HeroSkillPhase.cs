@@ -1,5 +1,4 @@
 ﻿using TPT.Gameplay.Heroes;
-using TPT.Gameplay.UI.Heroes.Panels;
 using UnityEngine;
 
 namespace TPT.Gameplay.UI.Heroes.Skills
