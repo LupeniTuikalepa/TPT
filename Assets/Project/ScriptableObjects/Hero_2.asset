@@ -20,3 +20,7 @@ MonoBehaviour:
   <Strength>k__BackingField: 5
   <Prefab>k__BackingField: {fileID: 2231467944295801401, guid: 9c30e8ab40ca0ed4c8fd2df344681657, type: 3}
   <Icon>k__BackingField: {fileID: 21300000, guid: 9c2e10175a86e0f448d3abf1fe4e83d5, type: 3}
+  <SkillsData>k__BackingField:
+  - {fileID: 11400000, guid: 611fd4d27f9212e46b2fe07fe60cb636, type: 2}
+  - {fileID: 11400000, guid: 611fd4d27f9212e46b2fe07fe60cb636, type: 2}
+  - {fileID: 11400000, guid: 611fd4d27f9212e46b2fe07fe60cb636, type: 2}

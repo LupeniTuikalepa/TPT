@@ -1,13 +1,14 @@
-﻿using UnityEngine;
+﻿using TPT.Core.Data.Skills;
+using UnityEngine;
 
-namespace TPT.Data.Heroes
+namespace TPT.Core.Data.Heroes
 {
     [CreateAssetMenu(fileName = "New HeroData", menuName = "TPT/Hero", order = 0)]
     public class HeroData : ScriptableObject
     {
         [field : SerializeField]
         public string Name { get; private set; }
-        
+
         [field : SerializeField, TextArea]
         public string Description { get; private set; }
 
@@ -28,6 +29,8 @@ namespace TPT.Data.Heroes
 
         [field: SerializeField]
         public Sprite Icon { get; private set; }
-        
+
+        [field: SerializeField]
+        public SkillData[] SkillsData { get; private set; }
     }
 }

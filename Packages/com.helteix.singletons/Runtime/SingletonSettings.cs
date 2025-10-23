@@ -38,7 +38,7 @@ namespace Helteix.Singletons
 
         protected override void OnLoaded()
         {
-            SingletonPrefabReference[] prefabReferences = PrefabReferences;
+            SingletonPrefabReference[] prefabReferences = PrefabReferences??= Array.Empty<SingletonPrefabReference>();
 
             for (int i = 0; i < prefabReferences.Length; i++)
             {
