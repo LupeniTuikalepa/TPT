@@ -21,6 +21,6 @@ MonoBehaviour:
   <Prefab>k__BackingField: {fileID: 2231467944295801401, guid: 9e65457b7d5282d4d961fcdce56ae746, type: 3}
   <Icon>k__BackingField: {fileID: 21300000, guid: 8b15886d2dcd77e4dbabc81e9a0485d6, type: 3}
   <SkillsData>k__BackingField:
-  - {fileID: 11400000, guid: 611fd4d27f9212e46b2fe07fe60cb636, type: 2}
+  - {fileID: 11400000, guid: 00333da519a28d2419330ec30f67db65, type: 2}
   - {fileID: 11400000, guid: 611fd4d27f9212e46b2fe07fe60cb636, type: 2}
   - {fileID: 11400000, guid: 611fd4d27f9212e46b2fe07fe60cb636, type: 2}

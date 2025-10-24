@@ -5,7 +5,8 @@ using UnityEngine.EventSystems;
 namespace TPT.Gameplay.UI.Heroes
 {
     [RequireComponent(typeof(CanvasGroup))]
-    public abstract class HeroTurnPhaseUI<T> : MonoBehaviour where T : HeroTurnPhase
+    public abstract class HeroTurnPhaseUI<T> : MonoBehaviour 
+        where T : HeroTurnPhase
     {
         public bool IsOpen { get; private set; }
 

@@ -36,7 +36,6 @@ namespace TPT.Gameplay.UI.Heroes
             hero.OnTurnEnded += Deactivate;
         }
 
-
         private void OnDisable()
         {
             hero.OnTurnStarted -= Activate;

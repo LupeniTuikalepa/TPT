@@ -4,7 +4,7 @@ using UnityEngine;
 namespace TPT.Gameplay.Heroes.Skills
 {
     [CreateSkillFor(typeof(DebugSkillData))]
-    public sealed class DebugSkill : Skill<DebugSkillData>
+    public class DebugSkill : Skill<DebugSkillData>
     {
         public override bool CanBeUsed() => true;
 

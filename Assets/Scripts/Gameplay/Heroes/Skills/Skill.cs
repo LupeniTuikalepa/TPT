@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using TPT.Core.Data.Skills;
 
 namespace TPT.Gameplay.Heroes.Skills
 {
-    public abstract class Skill<T> : ISkill where T : SkillData
+    public abstract class Skill<T> : ISkill
+        where T : SkillData
     {
         public event Action<Hero> OnUsed;
 
@@ -18,6 +20,9 @@ namespace TPT.Gameplay.Heroes.Skills
 
         public T Data { get; private set; }
 
+
+        public List<int> list;
+        
         public void Initialize(T data)
         {
             Data = data;
